@@ -328,7 +328,7 @@ h4{
 
 }
 #goBack{
-    margin-top: 42rem;
+    margin-top: 140%;
     display: none;
 }
 
@@ -449,8 +449,8 @@ cursor: pointer;
     font-weight: 300;
 }
 .sPic{
-    width:3.2rem;
-    height:3.2rem;
+    width:10%;
+    height:10%;
     margin-right:1rem;
 
 }
