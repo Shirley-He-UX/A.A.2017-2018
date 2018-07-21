@@ -7,255 +7,112 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
       <title>KEEP CLAM AND LIVING ON</title>
-     <!-- custom files-->
-     <link rel="stylesheet" type="text/css" href="../index.css">
-     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-    <style type="text/css" media="screen">
-                .divFly{
-                    width:100%;
-                    height:100%;
-                    overflow: hidden;
-                    position: fixed;
-                }
-                .divFly img{
-                    position: relative;
-                    width:120%;
-                    left: -160px;
-                    top: -8%;
-                    margin: 0%;
-                }
-            </style>
-
-        </head>
-    <body>
-        <header>
-            <figure class="cover-img"></figure>
-            <button class="menu-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" class="menu-svg icon-visible" x="0px" y="0px" width="32" height="24" viewBox="0 0 32 24">
-                    <path d="M30 2H2M30 12H2M30 22H2"></path>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="menu-svg close-icon absolute scaled" x="0px" y="0px" width="32" height="24" viewBox="0 0 32 24">
-                    <path d="M25.9 21.9L6.1 2.1M25.9 2.1L6.1 21.9"></path>
-                </svg>
-            </button>
-        </header>
-
-        <nav class="sidebar nav-closed">
-            <div class="sidebar-index row">
-                <div class="sidebar-home col mt-5">
-                    <h4 class="sidebar-title maroon" id="subTi">MENU</h4>
-                     <h4 class="sidebar-title maroon" id="goBack">BACK</h4>
-                </div>
-                <div class="sidebar-list col mt-5">
-                    <ul id = "menus">
-                        <li>
-                            <a id="fbShare" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.google.com%2Fmaps%2Fd%2Fviewer%3Fmid%3D1p6wcSX0hwljmDQbHhu_HD5Fw9IZwP2JR%26usp%3Dsharing&t=Human%20stampede%20map" target="_blank">SHARE</a>
-                        </li>
-                        <hr>
-                        <li>
-                            <a id = "checks" a href="javascript:void(0)" onclick="fn(this)">CHECK TIPS</a>
-                        </li>
-                        <hr>
-                        <li>
-                            <a href="../index.html">DATA</a>
-                        </li>
-                        <hr>
-                        <li>
-                            <a href="../about.html">ABOUT</a>
-                        </li>
-                        <hr>
-                        <li>
-                            <a href="immerse.html">RESTART</a>
-                        </li>
-                    </ul>
-                    
-                    <div id = "sTips" class = "row">
-                        <span> 
-                           <div class="row">
-                                <img src="../assets/icon_instruction.png" class="sPic"><p class="maroon">Find the signs to <br/>plan the routes</p>
-                            </div>
-                           <div class="row">
-                                <img src="../assets/icon_focus.png" class="sPic"><p class="maroon">Pay attention to the <br/>surroundings</p>
-                            </div>
-                           <div class="row">
-                                <img src="../assets/icon_crowd.png" class="sPic"><p class="maroon">Follow the crowd<br/>(the accordion method)</p>
-                            </div>
-                           <div class="row">
-                                <img src="../assets/icon_speak.png" class="sPic"><p class="maroon">Communicate with surroundings<br/>
-                                (Human Microphone)</p>
-                            </div>                             
-                           <div class="row">
-                                <img src="../assets/icon_choice.png" class="sPic"><p class="maroon">Chose the right position to <br/>protect yourself</p>
-                            </div>
-                           <div class="row">
-                                <img src="../assets/icon_peri.png" class="sPic"><p class="maroon">When you are in the peripheral parts
-                                <br/>
-                                Run away from here!</p>
-                            </div>
-                           <div class="row">
-                                <img src="../assets/icon_center.png" class="sPic"><p class="maroon">When you are in the central parts
-                                <br/>
-                                Let peripheral parts know the danger</p>
-                            </div>
-                            <div class="row">
-                                <img src="../assets/icon_shelter.png" class="sPic"><p class="maroon">Find a cover to <br/>get rid of the crowd</p>
-                            </div>                             
-                    </div>
-                </div>
-                <div class="col mt-5" class = "row">
-                    .
-                </div>
-            </div>
-        </nav>
-           
-            <div class="tips row">
-                    <img class="tipsIcon" src="../assets/icon_mouse.png" />
-                   <p>Move your mouse to look around</p>
-               </div>
-            </div>
-            
-            <div class="people">
-                    <p>
-                        The number of the people in the the Bund is about
-                    </p>
-                    <p id = "peoNum">
-                        244000
-                    </p>
-            </div>
-            <div class="time">
-                    <p id = "clock">
-                        00:00:00
-                    </p>
-            </div>
-            
-            <div class="divFly" style="position:absolute;">
-                <img id="controls" src="../assets/immerseBund.jpg" />
-            </div>
-            <div class="divFly" style="position:absolute;">
-                <img id="lines" src="../assets/immerseBundLine.png" />
-            </div>
-
-        <audio autoplay loop  preload="auto">
-              <source src="../assets/people.mp3" type="audio/mpeg"/></audio>
+      
 <!--
-         <audio autoplay loop preload="auto">
-             <source src="../assets/Scream2.mp3" type="audio/mpeg"/></audio>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="https://d3js.org/queue.v1.min.js"></script>
+        <script src="https://d3js.org/topojson.v1.min.js"></script>
 -->
-    </body>
+     <!-- custom files-->
+     <link rel="stylesheet" type="text/css" href="index.css">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+</head>
+ <body>
  
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="z-index: 100;">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header navbar-left logo">        
+          <a class="navbar-brand" href="index.html">CROWD DISASTER</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+          <ul class="navbar-header row navbar-right tag">
+                <li><a class="navi" href="immerse/immerse.html"> IMMERSE </a></li>
+                <li><a class="navi-active" href="#"> DATA </a></li>
+                <li><a class="navi" href="about.html"> ABOUT </a></li>
+          </ul>
+      </div><!-- /.container-fluid -->
+    </nav>
+     <main role="main" class="container">
+         <div class = "legends ">
+             <ul>
+                 <li class = "row ">
+                     <div class="circles" style="background:rgba(71,184,277,0.4); border: 1px solid rgba(71,184,277,1);"></div><p class ="maroon"> POLITICAL </p>
+                 </li>
+                  <li class = "row">
+                     <div class="circles" style="background:rgba(46,97,212,0.4); border: 1px solid rgba(46,97,212,1);"></div><p class="maroon"> SPORT </p>
+                 </li>
+                 <li class = "row">
+                     <div class="circles" style="background:rgba(79,201,102,0.4);  border: 1px solid rgba(79,201,102,1);"></div><p class="maroon"> PERSONAL </p>
+                 </li>
+                 <li class = "row">
+                     <div class="circles" style="background:rgba(255,158,0,0.4);  border: 1px solid rgba(255,158,0,1);"></div>
+                     <p class="maroon"> RELIGIOUS </p>
+                 </li>
+                 <li class = "row">
+                     <div class="circles" style="background:rgba(227,46,54,0.4);  border: 1px solid rgba(227,46,54,1);"></div><p class="maroon"> ENTERTAINMENT </p>
+                 </li>    
+                 <li class = "row">
+                     <div class="circles" style="background:rgba(163,125,89,0.4);  border: 1px solid rgba(163,125,89,1);"></div><p class="maroon"> CULTURAL </p>
+                 </li> 
+                 <li class = "row">
+                     <div class="circles" style="background:rgba(108,25,121,0.4);  border: 1px solid rgba(108,25,121,1);"></div>
+                     <p class="maroon"> ACCIDENT </p>
+                 </li>
+                 <li class = "row">
+                     <div class="circles" style="background:rgba(189,189,189,0.2);  border: 1px solid rgba(189,189,189,1);"></div>
+                     <p class="maroon"> TERRORIST </p>
+                 </li>          
+             </ul>
+         </div>
+         
+        <div id="tooltip" class="hidden">
+			<h2 id ="headline"> Heading</h2>
+			<p><span id="location"></span></p>
+			<p><strong>DEATH : </strong><span id="death"></span></p>
+			<p><strong>INJURED : </strong><span id="injured"></span></p>
+			<p><strong>DESCRIPTION : </strong><span id="description"></span></p>
+			<p><strong>CAUSE : </strong><span id="cause"></span></p>
+		</div>
+         
+         <div class = "indexDeath">
+             <div>
+                 <p class="maroon" style="letter-spacing: 0.32rem;font-weight: 300;"> DIED</p>
+                 <p class = "maroon peoNum">
+                     19,037 
+                 </p>
+                 <br/>
+             </div>
+             
+             <div>
+                 <p class="maroon" style="letter-spacing: 0.32rem;font-weight: 300;"> INJURED</p>
+                 <p class = "maroon peoNum">
+                     35,982 
+                 </p>
+             </div>
+         </div>
+         <a class="btn btn-large click" href="map2/map.html">
+              CHANGE MODE
+         </a>
+
+         <svg id="svg" width="100%" height="100%" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid" style="margin:auto; display:block">
+         </svg>
+    </main>
+
+    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-                function DivFlying() {
-                  var div = document.getElementById("controls");
-                  var line = document.getElementById("lines");
-                  var  timeString;
-                  if (!div) {
-                      return;
-                  }
-                  var intX = window.event.clientX-window.innerWidth/2;
-//                    console.log(intX);
-//                  var intY = window.event.clientY;
-                    div.style.left =-160-intX/6 + "px";;
-                    line.style.opacity = 1-Math.abs(intX)/200;
-                }
-                document.onmousemove = DivFlying;
-                
-                 // load the interactions only when the document is ready
-                $(document).ready(function() {
-                    $('.menu-btn').click(function(){
-                        $(this).children('.menu-svg').toggleClass('scaled');
-                        $(this).children('.menu-svg').toggleClass('icon-visible');
-                        $('.sidebar').toggleClass('nav-closed nav-open');
-                    });
-                });  
-        
-
-//                function displayTime() {
-//                    document.getElementById("clock").innerHTML = new Date().toTimeString().substring(0,8);
-//                } 
-//                setInterval(displayTime,1000);  
-            var m1 = 0
-            var s1 = 30;
-            var h="23";
-            var m="00";
-            var s="00";
-            var count = 0;    
-            
- 
-               setInterval(function(){
-                    if (s1<10){s = "0"+s1;}else{ s = s1;}   
-                    if (m1<10){m = "0"+m1;}else{m = m1;}   
-                    count++;
-                    s1++;
-                    if(s1>56){
-                       m1++;
-                       s1=0;
-                    }   
-                  document.getElementById("peoNum").innerHTML = (244000+count*4) ;
-                   if(count>40){
-                       $('#peoNum').css("color","#E43C52");
-
-                   }
-                    document.getElementById("clock").innerHTML = (h+":"+m+":"+s) ;
-               }, 100); 
-
-
-                $(function(){
-                    $('#checks').click(function(){
-                        var tab = $("#sTips"); 
-                        if(tab.css("display")=="none"){ 
-                            tab.css("display","block"); 
-                            $('#menus').css("display","none"); 
-                            $('#goBack').css("display","block"); 
-                            $('#subTi').html("CHECK TIPS"); 
-                            
-                        } 
-                        else{ 
-                            tab.css("display","none"); 
-                            $('#goBack').css("display","none"); 
-                            $('#menus').css("display","block");
-                            $('#subTi').html("MENU"); 
-                        } 
-                    });
-                    
-                    $('#goBack').click(function(){
-                        var tab = $("#sTips"); 
-                        if(tab.css("display")=="none"){ 
-                            tab.css("display","block"); 
-                            $('#menus').css("display","none"); 
-                            $('#goBack').css("display","block"); 
-                            $('#subTi').html("CHECK TIPS"); 
-                            
-                        } 
-                        else{ 
-                            tab.css("display","none"); 
-                            $('#goBack').css("display","none"); 
-                            $('#menus').css("display","block");
-                            $('#subTi').html("MENU"); 
-                        } 
-                    });
-                });
-        
-        
-
-//               // 定义一个函数用以显示当前时间
-//               function displayTime() {
-//                var elt = document.getElementById("clock"); // 通过id= "clock"找到元素
-//                var now = new Date(); // 得到当前时间
-//                elt.innerHTML = now.toLocaleTimeString(); //让elt来显示它
-//                setTimeout(displayTime,1000); //在1秒后再次执行
-//               }
-//               window.onload = displayTime; //当onload事件发生时开始显示时间
-     </script>
-
-</body>
-</html>
-
+     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+   
+   
+     <script type="text/javascript" src="https://d3js.org/topojson.v1.min.js"></script>
+     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
