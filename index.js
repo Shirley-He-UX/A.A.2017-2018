@@ -31,8 +31,8 @@ d3.json("places.geojson", function(places) {
                                    .append("path")
                                    .attr({
                                         "d":path,
-                                        "stroke":function(){return "#323232";},
-                                        "fill":function(d){return "#141414";}
+                                        "stroke":function(){return "#1E202A";},
+                                        "fill":function(d){return "#0B0D19";}
                                    })
                                     .style("stroke-width",0.5);
 
@@ -139,7 +139,7 @@ d3.json("places.geojson", function(places) {
                             d3.select("#tooltip")
 //                                .style("left",  getMousePos(e).x+"px")
 //                                .style("top", getMousePos(e).y+"px")				
-                                .style("left",  32+"%")
+                                .style("left",  30+"%")
                                 .style("top", 30+"%");
                             d3.select("#headline")
                                 .text(it.properties.Time);
