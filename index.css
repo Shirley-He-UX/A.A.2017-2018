@@ -4,7 +4,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #111;
+  background: #0A0C16;
 }
 
 h1, h2, h3, h4, h5, p{
@@ -250,6 +250,8 @@ h4{
     margin: 2%;
 }
 .cards{
+    width:80%;
+    height:auto;
    margin-left: 10%;
    opacity: 0.5;
 }
@@ -309,7 +311,7 @@ h4{
 
 /* Sidebar styles */
 .sidebar {
-    background-color: #111;
+    background-color: #0A0C16;
     opacity: 0.9;
     height: 100vh;
     left: 0;
@@ -328,7 +330,7 @@ h4{
 
 }
 #goBack{
-    margin-top: 140%;
+    margin-top: 120%;
     display: none;
 }
 
@@ -372,9 +374,9 @@ cursor: pointer;
     border-bottom: .14rem solid #fff;
 }
 .tips{
+/*    vertical-align: middle;*/
     z-index: 130;
-    position: fixed;
-    margin: 3% 38% 0 38%;
+    margin: 3% 34% 0 34%;
     width: 60%;
 	-webkit-animation-timing-function:ease-in-out;
 	-webkit-animation-name:breathe;
