@@ -57,19 +57,9 @@ h4{
     font-weight: 300;  
 }
 
-.logo a{
-    text-align: left;
-    font-size: 1.6em;
-    padding-left: 5%;
-    letter-spacing: .3em;
-    font-family: 'Roboto';
-    font-weight: 700;
-    color:#fff;
-}
-
 .legends{
     left:0%;
-    top:36%;
+    bottom:4.6%;
     position:fixed; 
     z-index: 10;
 }
@@ -88,11 +78,12 @@ h4{
 }
 .legends ul li p{
     font-weight: 100;
-    letter-spacing: .3rem;
+    letter-spacing: .2rem;
     font-size: 0.6rem;
 }
 .legends ul li{
-    margin: 1rem;
+    display: inline-;
+    margin: 1rem 0;
 }
 /*
 .legends ul li p:hover{
@@ -112,7 +103,7 @@ h4{
 
 .click{
     right:5%;
-    top:86%;
+    bottom:8%;
     position:fixed;
     letter-spacing: .5em;
     color: #fff;
@@ -125,6 +116,7 @@ h4{
     border: .1em solid rgba(255,255,255,0.5);
     border-Radius: 0;
     z-index: 130;
+    text-decoration: none;
     
 }
 .click:hover{
@@ -205,11 +197,22 @@ h4{
 .navi{
     font-weight: 100;
     opacity: 0.6;
-   
+    padding:0;
+
 }
 .navbar-right{
-     margin-right: 2%;
+    display: inline-flex;
+    padding:0 0 0 0;
+    margin-left: 4%;
+    margin-top: 0;
+
 }
+.navbar-right li{
+
+    padding:1rem;;
+   font-size: 0.8rem;
+}
+
 .navi:before {
  content: "";
  position: absolute;
@@ -423,7 +426,7 @@ cursor: pointer;
 }
 #peoNum, #clock{
     margin-top: 1rem;
-    font-size: 3.2rem;
+    font-size: 200%;
     font-weight: 900;
 }
 .peoNum{
@@ -455,3 +458,4 @@ cursor: pointer;
     height:10%;
     margin-right:1rem;
 }
+
