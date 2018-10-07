@@ -139,7 +139,7 @@ d3.json("places.geojson", function(places) {
                             d3.select("#tooltip")
 //                                .style("left",  getMousePos(e).x+"px")
 //                                .style("top", getMousePos(e).y+"px")				
-                                .style("left",  30+"%")
+//                                .style("left",  4+"rem")
                                 .style("top", 30+"%");
                             d3.select("#headline")
                                 .text(it.properties.Time);
