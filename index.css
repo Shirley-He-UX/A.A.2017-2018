@@ -148,7 +148,9 @@ h4{
 /*-earth-*/
 #tooltip {
 	position: absolute;
-	width: 32%;
+    margin:auto;
+	width: 60%;
+    left:20%;
 	height: auto;
 	padding: 1.6% 2.4% 1.6% 2.4% ;
 	background-color: white;
